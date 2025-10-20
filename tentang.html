@@ -1,25 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Tentang Kami</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Kami | COKIEV'S</title>
+  <style>
+    /* --- RESET DASAR --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #fff8f0, #ffe6e6);
+      color: #4a3f35;
+      line-height: 1.8;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #b85c38;
+      margin-bottom: 10px;
+    }
+    p {
+      max-width: 700px;
+      margin: 10px auto;
+      text-align: center;
+      font-size: 1.05rem;
+    }
+    b {
+      color: #b85c38;
+    }
+    ul {
+      list-style-type: "🍪 ";
+      text-align: left;
+      max-width: 600px;
+      margin: 15px auto;
+      font-size: 1rem;
+    }
+    nav {
+      text-align: center;
+      margin-top: 40px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #b85c38;
+      padding: 10px 18px;
+      border-radius: 25px;
+      margin: 0 6px;
+      transition: 0.3s ease;
+      font-weight: 500;
+    }
+    nav a:hover {
+      background-color: #8a3f24;
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #7b6652;
+    }
+    /* --- ANIMASI MASUK --- */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    body {
+      animation: fadeIn 1s ease-in-out;
+    }
+  </style>
 </head>
 <body>
-    <h1>Tentang Kami</h1>
-    <p><b>COKIEV'S</b> lahir dari dapur rumahan dengan cinta, menghadirkan cookies manis dan imut untuk menemani setiap momen bahagia kamu.</p>
-    <p><b>Visi:</b> Menjadi brand cookies yang membawa senyum di setiap gigitan, dengan rasa homemade yang selalu hangat di hati.</p>
-    <p><b>Misi:</b> 
-        <ul>
-            <li>Menggunakan bahan berkualitas terbaik tanpa pengawet</li>
-            <li>Menyajikan cookies fresh dari oven setiap hari</li>
-            <li>Memberikan pelayanan ramah, cepat, dan penuh perhatian</li>
-        </ul>
-    </p>
-
-    <nav>
-        <a href="index.html">Beranda</a> |
-        <a href="tentang.html">Tentang Kami</a> |
-        <a href="produk.html">Produk</a> |
-        <a href="kontak.html">Kontak</a>
-    </nav>
+  <header>
+    <h1>🍪 Tentang Kami</h1>
+    <p><b>COKIEV'S</b> lahir dari dapur rumahan dengan cinta, menghadirkan cookies manis dan imut untuk menemani setiap momen bahagia kamu. ✨</p>
+  </header>
+  <section>
+    <p><b>Visi:</b> Menjadi brand cookies yang membawa senyum di setiap gigitan, dengan rasa homemade yang selalu hangat di hati. 🤍</p>
+    <p><b>Misi:</b></p>
+    <ul>
+      <li>Menggunakan bahan berkualitas terbaik tanpa pengawet</li>
+      <li>Menyajikan cookies fresh dari oven setiap hari</li>
+      <li>Memberikan pelayanan ramah, cepat, dan penuh perhatian</li>
+    </ul>
+  </section>
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="tentang.html">Tentang Kami</a>
+    <a href="produk.html">Produk</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+  <footer>
+    <p>© 2025 COKIEV'S — Made with love & cookies 🤎</p>
+  </footer>
 </body>
 </html>
