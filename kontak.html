@@ -1,27 +1,188 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Kontak | COOKIEV'S</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak | COOKIEV'S</title>
+  <style>
+    /* RESET DASAR */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #fffaf7, #ffece2);
+      color: #4a3f35;
+      line-height: 1.7;
+      padding: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      text-align: center;
+      color: #b85c38;
+      font-size: 2.6rem;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1rem;
+      color: #6b5643;
+      margin-bottom: 6px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #b85c38;
+      margin-top: 45px;
+      font-size: 1.6rem;
+    }
+
+    /* FORM STYLE */
+    form {
+      max-width: 520px;
+      background: #fff;
+      margin: 35px auto;
+      padding: 28px 32px;
+      border-radius: 25px;
+      box-shadow: 0 6px 18px rgba(184, 92, 56, 0.1);
+      border: 2px solid #f4d9c6;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #704f37;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1.5px solid #f1c8a8;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-family: inherit;
+      margin-bottom: 22px;
+      background-color: #fffdfb;
+      transition: 0.3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #b85c38;
+      box-shadow: 0 0 8px rgba(184, 92, 56, 0.25);
+    }
+
+    input[type="submit"] {
+      background-color: #b85c38;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      display: block;
+      margin: 0 auto;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #a54e2f;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    /* NAVIGASI */
+    nav {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #b85c38;
+      padding: 10px 20px;
+      border-radius: 30px;
+      margin: 0 6px;
+      transition: 0.3s ease;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      background-color: #8a3f24;
+      transform: scale(1.05);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #7b6652;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #b85c38;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ANIMASI */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-    <h1>Hubungi COOKIEV'S</h1>
-    <p>Alamat: Jl. Manis No. 27, Wonosobo</p>
-    <p>Telepon: 0812-4567-8901</p>
-    <p>Email: cokievs.cookies@gmail.com</p>
 
-    <h2>Form Pemesanan / Kritik & Saran</h2>
-    <form>
-        Nama: <input type="text" name="nama"><br><br>
-        Email: <input type="email" name="email"><br><br>
-        Pesan: <textarea name="pesan"></textarea><br><br>
-        <input type="submit" value="Kirim">
-    </form>
+  <h1>📞 Hubungi COOKIEV'S</h1>
+  <p>Alamat: Jl. Manis No. 27, Wonosobo</p>
+  <p>Telepon: 0812-4567-8901</p>
+  <p>Email: <a href="mailto:cokievs.cookies@gmail.com" style="color:#b85c38; text-decoration:none;">cokievs.cookies@gmail.com</a></p>
 
-    <nav>
-        <a href="index.html">Beranda</a> |
-        <a href="tentang.html">Tentang COOKIEV'S</a> |
-        <a href="produk.html">Produk</a> |
-        <a href="kontak.html">Kontak</a>
-    </nav>
+  <h2>Form Pemesanan / Kritik & Saran</h2>
+
+  <form>
+    <label for="nama">Nama</label>
+    <input type="text" id="nama" name="nama" placeholder="Masukkan nama kamu..." required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Masukkan email kamu..." required>
+
+    <label for="pesan">Pesan</label>
+    <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan atau saran kamu di sini..." required></textarea>
+
+    <input type="submit" value="Kirim Pesan 🍪">
+  </form>
+
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="tentang.html">Tentang Kami</a>
+    <a href="produk.html">Produk</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
+  <footer>
+    <p>© 2025 COOKIEV'S — Dibuat dengan cinta & cookies 🤎</p>
+  </footer>
+
 </body>
 </html>
