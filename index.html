@@ -1,18 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
- <title>COKIEV'S</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COKIEV'S | Dunia Manis Penuh Cinta</title>
+  <style>
+    /* RESET DASAR */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #fff8f0, #ffe6e6);
+      color: #4a3f35;
+      text-align: center;
+      overflow-x: hidden;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    header {
+      padding: 50px 20px 20px;
+    }
+
+    h1 {
+      color: #b85c38;
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 1.3rem;
+      color: #6b4a3c;
+      margin-bottom: 25px;
+      font-style: italic;
+    }
+
+    /* NAVIGASI */
+    nav {
+      margin-top: 25px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #b85c38;
+      padding: 10px 20px;
+      border-radius: 25px;
+      margin: 0 8px;
+      transition: 0.3s ease;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      background-color: #8a3f24;
+      transform: scale(1.05);
+    }
+
+    /* BAGIAN HERO IMAGE */
+    .hero {
+      width: 100%;
+      max-width: 1100px;
+      margin: 40px auto;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    .hero img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      height: 400px;
+      filter: brightness(90%);
+      transition: 0.4s ease;
+    }
+
+    .hero:hover img {
+      transform: scale(1.02);
+      filter: brightness(100%);
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    /* GALERI GAMBAR */
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 50px auto;
+      max-width: 1000px;
+      padding: 0 20px;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.07);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background-color: #fffaf7;
+      padding: 20px;
+      margin-top: 50px;
+      color: #7b6652;
+      font-size: 0.9rem;
+      border-top: 2px solid #f2d4c2;
+    }
+
+    footer span {
+      color: #b85c38;
+      font-weight: 600;
+    }
+
+    /* ANIMASI */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
- <h1>Hai, Selamat datang di dunia manis"COKIEV'S"</h1>
-<font face=times new roman color=pink size=6>
- <p>Gigitan kecil, kebahagiaan besar .</p>
 
- <nav>
- <a href="index.html">Beranda</a> |
- <a href="tentang.html">Tentang Kami</a> |
- <a href="produk.html">Produk</a> |
- <a href="kontak.html">Kontak</a>
- </nav>
+  <header>
+    <h1>🍪 Hai, Selamat Datang di Dunia Manis <span style="color:#a64b2a;">COKIEV'S</span> 🍪</h1>
+    <p>“Gigitan kecil, kebahagiaan besar.” ✨</p>
+
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="tentang.html">Tentang Kami</a>
+      <a href="produk.html">Produk</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- Gambar utama -->
+  <div class="hero">
+    <img src="cookies_hero.jpg" alt="COKIEV'S Cookies Hero">
+    <div class="hero-text">Cinta & Manis di Setiap Gigitan 🤍</div>
+  </div>
+
+  <!-- Galeri produk -->
+  <section class="gallery">
+    <img src="choco_chip.jpg" alt="Choco Chip Cookies">
+    <img src="double_choco.jpg" alt="Double Choco Cookies">
+    <img src="matchaberry_cookie.jpg" alt="Matcha Cookies">
+    <img src="sweet_box.jpg" alt="Sweet Box COKIEV'S">
+  </section>
+
+  <footer>
+    <p>© 2025 <span>COKIEV'S</span> — Dibuat dengan cinta & cookies hangat 🤎</p>
+  </footer>
+
 </body>
 </html>
