@@ -1,48 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Produk Kami - COKIEV'S</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produk Kami | COKIEV'S</title>
+  <style>
+    /* RESET DASAR */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #fff8f0, #ffe6e6);
+      color: #4a3f35;
+      line-height: 1.8;
+      padding: 30px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    h1 {
+      text-align: center;
+      color: #b85c38;
+      font-size: 2.5rem;
+      margin-bottom: 25px;
+      letter-spacing: 1px;
+    }
+    /* TABEL PRODUK */
+    table {
+      width: 90%;
+      margin: 0 auto 40px;
+      border-collapse: collapse;
+      background-color: #fffaf7;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+    th, td {
+      text-align: center;
+      padding: 15px;
+    }
+    th {
+      background-color: #b85c38;
+      color: #fff;
+      font-size: 1.1rem;
+    }
+    tr:nth-child(even) {
+      background-color: #fff4ee;
+    }
+    tr:hover {
+      background-color: #ffe0d3;
+      transition: 0.3s ease;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 15px;
+      object-fit: cover;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.08);
+    }
+    /* NAVIGASI */
+    nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #b85c38;
+      padding: 10px 20px;
+      border-radius: 25px;
+      margin: 0 6px;
+      transition: 0.3s ease;
+      font-weight: 500;
+    }
+    nav a:hover {
+      background-color: #8a3f24;
+      transform: scale(1.05);
+    }
+    /* FOOTER */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #7b6652;
+    }
+    /* ANIMASI */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-    <h1>Daftar Produk COKIEV'S</h1>
-    <table border="1">
-        <tr>
-            <th>Gambar</th>
-            <th>Nama Produk</th>
-            <th>Harga</th>
-        </tr>
-        <tr>
-            <td><img src="choco_chip.jpg" width="100"></td>
-            <td>Choco Chip Happy </td>
-            <td>Rp 25.000 / pack</td>
-        </tr>
-        <tr>
-            <td><img src="double_choco.jpg" width="100"></td>
-            <td>Double Choco Hug </td>
-            <td>Rp 30.000 / pack</td>
-        </tr>
-        <tr>
-            <td><img src="lovee.jpg" width="100"></td>
-            <td>Sweet love </td>
-            <td>Rp 28.000 / pack</td>
-        </tr>
-        <tr>
-            <td><img src="matcha.jpg" width="100"></td>
-            <td> Matchaberry  </td>
-            <td>Rp 32.000 / pack</td>
-        </tr>
-        <tr>
-            <td><img src="sweet_box.jpg" width="100"></td>
-            <td>Paket COKIEVS Sweet Box </td>
-            <td>Rp 85.000 / box</td>
-        </tr>
-    </table>
-
-    <nav>
-        <a href="index.html">Beranda</a> |
-        <a href="tentang.html">Tentang Kami</a> |
-        <a href="produk.html">Produk</a> |
-        <a href="kontak.html">Kontak</a>
-    </nav>
+  <h1>🍪 Daftar Produk COKIEV'S</h1>
+  <table>
+    <tr>
+      <th>Gambar</th>
+      <th>Nama Produk</th>
+      <th>Harga</th>
+    </tr>
+    <tr>
+      <td><img src="choco_chip.jpg" alt="Choco Chip Happy"></td>
+      <td><b>Choco Chip Happy</b></td>
+      <td>Rp 25.000 / pack</td>
+    </tr>
+    <tr>
+      <td><img src="double_choco.jpg" alt="Double Choco Hug"></td>
+      <td><b>Double Choco Hug</b></td>
+      <td>Rp 30.000 / pack</td>
+    </tr>
+    <tr>
+      <td><img src="red_velvet_heartvelvet.jpg" alt="Sweet Love"></td>
+      <td><b>Sweet Love</b></td>
+      <td>Rp 28.000 / pack</td>
+    </tr>
+    <tr>
+      <td><img src="matchaberry_cookie.jpg" alt="Matchaberry Love"></td>
+      <td><b>Matchaberry Love</b></td>
+      <td>Rp 32.000 / pack</td>
+    </tr>
+    <tr>
+      <td><img src="sweet_box.jpg" alt="Paket Sweet Box"></td>
+      <td><b>Paket COKIEV’s Sweet Box</b></td>
+      <td>Rp 85.000 / box</td>
+    </tr>
+  </table>
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="tentang.html">Tentang Kami</a>
+    <a href="produk.html">Produk</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+  <footer>
+    <p>© 2025 COKIEV'S — Cookies hangat untuk hati yang manis 🤎</p>
+  </footer>
 </body>
 </html>
